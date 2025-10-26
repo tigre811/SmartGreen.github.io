@@ -7,5 +7,14 @@
 </head>
 <body>
     <h1>Bienvenido, Usuario!</h1>
+    <script>
+    function login(obj) {
+        google.script.run
+        .withSuccessHandler((obj) => {
+          (obj.loggedin == true) ? document.getElementById('msg').innerHTML = "Your are logged in" : document.getElementById('msg').innerHTML = "Go away";
+        }).login(obj);
+      }
+    console.log("My Code");
+  </script>
 </body>
 </html>
